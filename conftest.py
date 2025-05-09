@@ -23,8 +23,3 @@ def ingredient():
     mock_ingredient.get_price.return_value = 0.5
     mock_ingredient.get_type.return_value = "Тестовый тип"
     return mock_ingredient
-
-
-@pytest.fixture
-def mock_ingredient():
-    return Mock(spec=Ingredient)
